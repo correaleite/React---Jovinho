@@ -1,0 +1,19 @@
+<svg width="230" height="175" viewBox="0 0 230 175" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="110" y="18.5674" width="146" height="110" transform="rotate(90 110 18.5674)" fill="url(#pattern0_840_2)"/>
+<path d="M229 121.214L180.146 105.708L186.883 43.018L223.609 61.4837L229 121.214Z" fill="#77EBFF"/>
+<path d="M73.9288 61.9769L180.146 105.708L186.883 43.018L125.474 17.0147L73.9288 61.9769Z" fill="#77EBFF"/>
+<path d="M73.9288 61.9769L81.6813 173.567L180.146 105.708L73.9288 61.9769Z" fill="#77EBFF"/>
+<path d="M31 40.5373L73.9288 61.9769L125.474 17.0147L81.9969 0.567383L31 40.5373Z" fill="#77EBFF"/>
+<path d="M31 40.5373L81.6813 173.567L73.9288 61.9769L31 40.5373Z" fill="#77EBFF"/>
+<path d="M81.6813 173.567L229 121.214L180.146 105.708L81.6813 173.567Z" fill="#77EBFF"/>
+<path d="M125.474 17.0147L81.9969 0.567383L31 40.5373L81.6813 173.567L229 121.214L223.609 61.4837L186.883 43.018L125.474 17.0147ZM81.6813 173.567L73.9288 61.9769M81.6813 173.567L180.146 105.708M31 40.5373L73.9288 61.9769M73.9288 61.9769L180.146 105.708M73.9288 61.9769L125.474 17.0147M180.146 105.708L186.883 43.018M180.146 105.708L229 121.214" stroke="#D0F8FF"/>
+<defs>
+<pattern id="pattern0_840_2" patternUnits="userSpaceOnUse" patternTransform="matrix(9 0 0 4.5 110 18.5674)" preserveAspectRatio="none" viewBox="0 0 15 7.5" width="1" height="1">
+<use xlink:href="#pattern0_840_2_inner" transform="translate(0 -7.5)"/>
+<use xlink:href="#pattern0_840_2_inner" transform="translate(7.5 -3.75)"/>
+<g id="pattern0_840_2_inner">
+<rect x="0.5" y="0.5" width="4" height="4" fill="#77EBFF" stroke="#D0F8FF"/>
+</g>
+<use xlink:href="#pattern0_840_2_inner" transform="translate(7.5 3.75)"/>
+</pattern></defs>
+</svg>
