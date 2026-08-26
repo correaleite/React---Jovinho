@@ -84,6 +84,14 @@ img {
 }
 
 
+.login-botao {
+    transition: .5s;
+}
+
+.login-botao:hover {
+    transform: scale(1.15);
+}
+
 .cards-jovinho {
     min-height: 100vh;
     display: flex;
@@ -893,6 +901,93 @@ footer {
     color: var(--color-blue);
     text-decoration: underline;
     font-size: var(--font-size-p-3v);
+}
+
+.section-login {
+    min-height: 90vh;
+    padding-inline: var(--spacing-s80);
+}
+
+.card-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: var(--spacing-s30);
+}
+
+.card-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid var(--color-strong-dark);
+    background-color: var(--color-white-obscure);
+    padding-top: var(--spacing-s40);
+    gap: 25px;
+    height: 550px;
+    width: 40%;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+
+.card-login input {
+    height: 30px;
+    width: 100%;
+    padding-left: var(--spacing-s10);
+    border: 1px solid var(--color-lighter-dark);
+    border-radius: 3px;
+    background-color: white;
+}
+
+.card-login button{
+    height: 30px;
+    width: 20%;
+    border: 1px solid var(--color-lighter-dark);
+    border-radius: 3px;
+    background-color: white;
+    transition: .4s;
+}
+
+.card-login button:hover{
+    background-color: #1043F3;
+    color: white;
+    border: 1px solid var(--color-lighter-dark);
+}
+
+.card-login p {
+    font-size: 2vmin;
+}
+
+.card-login a {
+    font-size: 2vmin;
+    color: #1043F3;
+    text-decoration: underline;
+}
+
+.div-email {
+    margin-top: var(--spacing-s10);
+}
+
+.div-senha {
+    margin-top: var(--spacing-s10);
+}
+
+.report-linha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: var(--spacing-s10);
+}
+
+.logado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-s30);
+    margin: auto;
 }
 
 .col-2{

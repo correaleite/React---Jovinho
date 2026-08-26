@@ -1,5 +1,4 @@
-import circleUserRegularFull from './assets/home/circle-user-regular-full.svg'
-import './styles.css'
+import circleUserRegularFull from '../assets/home/circle-user-regular-full.svg'
 
 function Navbar () {
     return (
@@ -14,7 +13,7 @@ function Navbar () {
                             <li><a href="#contato" class="menu-list-item">Contato</a></li>
                         </ul>
                     </nav>
-                    <img src={circleUserRegularFull} alt="circle-user"></img>
+                    <a class="login-botao" href="#login"><img  src={circleUserRegularFull} alt="circle-user"></img></a>
             </header>
     )
 }

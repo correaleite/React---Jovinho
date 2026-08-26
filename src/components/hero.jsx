@@ -1,7 +1,7 @@
-import iconeAvancar from './assets/home/icone-avancar.svg'
-import celularIcones from './assets/home/celular-icones.svg'
-import Navbar from './navbar'
-import './styles.css'
+import iconeAvancar from '../assets/home/icone-avancar.svg'
+import celularIcones from '../assets/home/celular-icones.svg'
+import Navbar from './Navbar'
+
 
 function Hero () {
     return (
