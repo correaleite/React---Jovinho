@@ -741,7 +741,7 @@ footer {
     justify-content: center;
     margin-top: var(--spacing-s60);
     text-align: center;
-    background-image: url(/img/home/fundo-titulo-nos.svg);
+    background-image: url(../assets/home/fundo-titulo-nos.svg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-block: var(--spacing-s50);
@@ -863,6 +863,7 @@ footer {
 .section-contato {
     min-height: 90vh;
     padding-inline:var(--spacing-s80);
+    background: var(--color-white-obscure);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -904,15 +905,20 @@ footer {
 }
 
 .section-login {
-    min-height: 90vh;
+    min-height: 100vh;
     padding-inline: var(--spacing-s80);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .card-login-container {
     display: flex;
     justify-content: center;
     align-items: center; 
-    margin-top: var(--spacing-s30);
+    width: 100%;
 }
 
 .card-login {
