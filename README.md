@@ -66,3 +66,7 @@ Durante o desenvolvimento deste projeto, foi utilizada IA (Claude, da Anthropic)
 - Auxílio na escrita e organização deste README.
 
 A lógica de negócio, validações e decisões de estrutura do projeto foram definidas e revisadas pelo desenvolvedor, com a IA atuando como suporte técnico e educacional durante o processo.
+
+## Link do Git e do Deploy
+- Github: https://github.com/correaleite/React---Jovinho
+- Deploy Vercel: https://vercel.com/gabriel-correa-leite/react-jovinho/BheURtQEYrff7JQNxitZumSjC3MX
