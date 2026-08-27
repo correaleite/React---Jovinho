@@ -52,9 +52,9 @@ Para abrir no browser
 
 ## Usuarios e senhas
 
-Email: "jovinho@fiap.com.br"
-Senha: Qualquer uma serve
-(Email e senha também visíveis no site)
+- Email: "jovinho@fiap.com.br"
+- Senha: Qualquer uma serve
+- (Email e senha também visíveis no site)
 
 ## Uso de Inteligência Artificial
 
