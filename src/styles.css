@@ -1003,6 +1003,42 @@ footer {
     grid-row: span 2;
 }
 
+.avaliacao-estrelas {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.estrelas {
+  display: flex;
+}
+
+.estrela {
+  font-size: 1.2rem;
+}
+
+.estrela.cheia {
+  color: #FFD93D;
+}
+
+.estrela.meia {
+  color: #FFD93D;
+  opacity: 0.5; /* solução simples; se quiser meia estrela "de verdade" visualmente, precisa de SVG */
+}
+
+.estrela.vazia {
+  color: #ccc;
+}
+
+.nota-numero {
+  font-weight: bold;
+}
+
+.total-avaliacoes {
+  color: #888;
+  font-size: 0.85rem;
+}
+
 @media( width <= 1024px) {
 
     /* nav-bar */

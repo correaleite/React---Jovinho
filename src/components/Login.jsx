@@ -4,12 +4,10 @@ function LoginSection() {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   
-  // inicializa "logado" já lendo o localStorage
   const [logado, setLogado] = useState(() => {
     return localStorage.getItem('logado') === 'true';
   });
 
-  // se já tinha um email salvo, recupera ele também (pra mostrar "logado como fulano@...")
   useEffect(() => {
     const emailSalvo = localStorage.getItem('emailLogado');
     if (emailSalvo) {
@@ -17,11 +15,26 @@ function LoginSection() {
     }
   }, []);
 
+  function forcaSenha(senha) {
+    const pontos = Math.min(senha.length, 10);
+    return pontos;
+  }
+
+  function statusForcaSenha(pontos) {
+    if (pontos === 0) return { texto: '', cor: 'transparent' };
+    if (pontos < 6) return { texto: 'Fraca', cor: 'red' };
+    if (pontos < 9) return { texto: 'Média', cor: 'orange' };
+    return { texto: 'Forte', cor: 'green' };
+  }
+
+  const pontosSenha = forcaSenha(senha);
+  const { texto: textoForca, cor: corForca } = statusForcaSenha(pontosSenha);
+
   function logar() {
     const emailTrim = email.trim();
     const senhaTrim = senha.trim();
 
-    if (emailTrim === "jovinho@fiap.com.br" && senhaTrim === "123") {
+    if (emailTrim === "jovinho@fiap.com.br" && senhaTrim.length >= 5) {
       setLogado(true);
       localStorage.setItem('logado', 'true');
       localStorage.setItem('emailLogado', emailTrim);
@@ -30,12 +43,12 @@ function LoginSection() {
       alert('Email inválido');
       console.log(`email inválido: ${emailTrim}`);
     }
-    else if (emailTrim.indexOf("@") !== -1 && senhaTrim.length <= 5) {
+    else if (emailTrim.indexOf("@") !== -1 && senhaTrim.length < 5) {
       alert('A senha precisa de no mínimo 5 caracteres');
       console.log(`senha inválida: ${senhaTrim}`);
     }
     else {
-      alert('Email ou senha incorretos');
+      alert('Email incorreto');
       console.log(`email: ${emailTrim} e senha: ${senhaTrim}`);
     }
   }
@@ -62,11 +75,9 @@ function LoginSection() {
         <div className="card-login">
           {logado ? (
             <>
-            <div className='logado'>
               <h2>Bem-vindo!</h2>
               <p>Você está logado como <strong>{email}</strong></p>
               <button onClick={sair}>Sair</button>
-            </div>
             </>
           ) : (
             <>
@@ -93,6 +104,21 @@ function LoginSection() {
                     value={senha}
                     onChange={(e) => setSenha(e.target.value)}
                   />
+                  {senha.length > 0 && (
+                    <div className="forca-senha">
+                      <div
+                        style={{
+                          width: `${pontosSenha * 10}%`,
+                          height: '4px',
+                          background: corForca,
+                          transition: 'width 0.2s, background 0.2s'
+                        }}
+                      />
+                      <span style={{ color: corForca, fontSize: '0.85em' }}>
+                        {textoForca}
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
               <button id="btnLogar" onClick={logar}>Entrar</button>
@@ -100,7 +126,7 @@ function LoginSection() {
                 <p>Problemas de login?</p>
                 <button id="btnReportar" onClick={reportar}>Reporte aqui</button>
               </div>
-              <p>Email: jovinho@fiap.com.br<br />Senha: 123</p>
+              <p>Email: "jovinho@fiap.com.br"<br />Senha: Qualquer</p>
             </>
           )}
         </div>
