@@ -2,43 +2,43 @@ import CelularMomento from '../assets/home/celular-momento.svg'
 
 function Adapte () {
     return (
-            <div class="container-adapte-se">
-            <div class="adapt-container">
-                <h3>Identificação e Filtro Inteligentes</h3>
-                <h1>Sugestões de filtros <br></br>feito pela IA</h1>
-                <div class="p-adapt-div">
-                    <p>Jovinho consegue melhorar suas fotos automaticamente <br></br>aplicando filtros e muito mais</p>
+        <div className="min-h-screen px-s90 bg-white-obscure">
+            <div className="text-center pt-s90 pb-s90">
+                <h3 className="text-gray pb-s30">Identificação e Filtro Inteligentes</h3>
+                <h1 className="font-bold text-[9vmin] text-lighter-dark mb-s30">Sugestões de filtros <br />feito pela IA</h1>
+                <div className="flex flex-col items-center justify-center">
+                <p className="text-[2.5vmin] font-medium text-gray max-[1024px]:text-[3vmin]">Jovinho consegue melhorar suas fotos automaticamente <br />aplicando filtros e muito mais</p>
                 </div>
-                <div class="adapt-imgs-container-row">
-                    <div class="filtros-container-grid">
-                            <div class="filtro">
-                                <p>Raio de sol</p>
-                                <img class="filtro-raio" src={CelularMomento} alt="celular-momento"></img>
-                            </div>
-                            <div class="filtro">
-                                <p>Tremor</p>
-                                <img class="filtro-tremor" src={CelularMomento}  alt="celular-momento"></img>
-                            </div>
-                            <div class="filtro">
-                                <p>Âmbar</p>
-                                <img class="filtro-ambar" src={CelularMomento} alt="celular-momento"></img>
-                            </div>
-                            <div class="filtro">
-                                <p>Sombra</p>
-                                <img class="filtro-sombra" src={CelularMomento}  alt="celular-momento"></img>
-                            </div>
-                            <div class="filtro">
-                                <p>Cristal</p>
-                                <img class="filtro-cristal" src={CelularMomento}  alt="celular-momento"></img>
-                            </div>
-                            <div class="filtro">
-                                <p>Brisa</p>
-                                <img class="filtro-brisa" src={CelularMomento}  alt="celular-momento"></img>
-                            </div>
+                <div className="flex flex-row items-end justify-center w-full mt-s50 gap-s30 max-[1024px]:flex-col">
+                    <div className="grid grid-cols-3 w-[40%] gap-s30 max-[1024px]:w-full max-[1024px]:mx-auto max-[680px]:grid-cols-2">
+                        <div className="w-full transition duration-500 hover:scale-110">
+                            <p className="text-strong-dark text-[2.5vmin] font-bold">Raio de sol</p>
+                        <img className="mt-s10 w-full brightness-[1.6]" src={CelularMomento} loading='lazy'  alt="celular-momento" />
+                        </div>
+                        <div className="w-full transition duration-500 hover:scale-110">
+                            <p className="text-strong-dark font-bold text-[2.5vmin]">Tremor</p>
+                        <img className="mt-s10 w-full brightness-[1.1] contrast-[1.3]" src={CelularMomento} loading='lazy'  alt="celular-momento" />
+                        </div>
+                        <div className="w-full transition duration-500 hover:scale-110">
+                            <p className="text-strong-dark font-bold text-[2.5vmin]">Âmbar</p>
+                        <img className="mt-s10 w-full brightness-[1.3] contrast-[1.2]" src={CelularMomento} loading='lazy'  alt="celular-momento" />
+                        </div>
+                        <div className="w-full transition duration-500 hover:scale-110">
+                            <p className="text-strong-dark font-bold text-[2.5vmin]">Sombra</p>
+                        <img className="mt-s10 w-full grayscale" src={CelularMomento} loading='lazy'  alt="celular-momento" />
+                        </div>
+                        <div className="w-full transition duration-500 hover:scale-110">
+                            <p className="text-strong-dark font-bold text-[2.5vmin]">Cristal</p>
+                        <img className="mt-s10 w-full brightness-[1.3] contrast-[0.7]" src={CelularMomento} loading='lazy'  alt="celular-momento" />
+                        </div>
+                        <div className="w-full transition duration-500 hover:scale-110">
+                            <p className="text-strong-dark font-bold text-[2.5vmin]">Brisa</p>
+                        <img className="mt-s10 w-full contrast-[1.4]" src={CelularMomento} loading='lazy'  alt="celular-momento" />
+                        </div>
                     </div>
-                    <div class="adapt-img-padrao-container">
-                        <img src={CelularMomento}  alt="celular-momento"></img>
-                    </div>
+                <div>
+                    <img src={CelularMomento} loading='lazy'  alt="celular-momento" className="w-[90%] max-[1024px]:w-full" />
+                </div>
                 </div>
             </div>
         </div>
