@@ -1,8 +1,7 @@
 import AvaliacaoEstrelas from './AvaliacaoEstrelas';
-import LogoGembyte from '../assets/home/logo-gembyte.svg';
-import LogoInstagram from '../assets/instagram.png'
-import LogoYoutube from '../assets/youtube.png'
-import LogoLinkedin from '../assets/linkedin.png'
+import LogoInstagram from '../assets/home/instagram-brands-solid.png'
+import LogoYoutube from '../assets/home/youtube-brands-solid.png'
+import LogoLinkedin from '../assets/home/linkedin-brands-solid.png'
 
 
 function Footer () {
@@ -11,7 +10,7 @@ function Footer () {
         <footer className="bg-dark-blue min-h-[60vh] px-s80 py-s60 flex flex-col justify-between max-[1024px]:px-s40 max-[680px]:px-s20 max-[680px]:py-s40">
             <div className="flex justify-between items-start gap-s40 max-[1024px]:flex-col max-[1024px]:items-center max-[1024px]:text-center max-[1024px]:gap-s50">
                 
-                {/* Links do Navbar */}
+            
                 <div>
                 <h3 className="text-white text-[3vmin] font-semibold mb-s20">Navegação</h3>
                 <ul className="flex flex-col gap-s10">
@@ -24,26 +23,22 @@ function Footer () {
                 </ul>
                 </div>
 
-                {/* Siga-nos */}
-                <div>
+                <div className=' w-[10%]'>
                     <h3 className="text-white text-[3vmin] font-semibold mb-s20">Siga-nos</h3>
-                    <div className="flex max-[1024px]:justify-center">
-                        <a href="https://www.instagram.com/jovi.brasil" target='_blank'>
-                        {/* Ícone Instagram */}
-                        <span><img src={LogoInstagram} className="w-[30%]" alt="LogoInstagram" loading='lazy' /></span>
+                    <div className="flex w-full gap-s10 justify-start max-[1024px]:justify-center">
+                        <a href="https://www.instagram.com/jovi.brasil" target='_blank' className=' w-[50%]'>
+                            <span><img src={LogoInstagram} className="w-full" alt="LogoInstagram" loading='lazy' /></span>
                         </a>
-                        <a href="https://www.youtube.com/@Jovi.Brasil" target='_blank'>
-                        {/* Ícone YouTube */}
-                        <span><img src={LogoYoutube} className="w-[30%]" alt="LogoInstagram" loading='lazy' /></span>
+                        <a href="https://www.youtube.com/@Jovi.Brasil" target='_blank' className=' w-[50%]'>
+                            <span><img src={LogoYoutube} className="w-full" alt="LogoYoutube" loading='lazy' /></span>
                         </a>
-                        <a href="https://www.linkedin.com/company/jovi-mobile/" target='_blank'>
-                        {/* Ícone LinkedIn */}
-                        <span><img src={LogoLinkedin} className="w-[30%]" alt="LogoInstagram" loading='lazy' /></span>
+                        <a href="https://www.linkedin.com/company/jovi-mobile/" target='_blank'className=' w-[50%]'>
+                            <span><img src={LogoLinkedin} className="w-full" alt="LogoLinkedin" loading='lazy' /></span>
                         </a>
                     </div>
                 </div>
 
-                {/* Contato */}
+           
                 <div>
                 <h3 className="text-white text-[3vmin] font-semibold mb-s20">Contatos</h3>
                 <ul className="flex flex-col gap-s10">
@@ -52,23 +47,17 @@ function Footer () {
                 </ul>
                 </div>
 
-                {/* Avaliação + Logo */}
+        
                 <div className="flex flex-col items-center gap-s30">
                 <div className="card-notaJovinho">
-                    {/* Template da nota de avaliações */}
+        
                     <h3 className="text-white text-[3vmin] font-semibold mb-s10">Jovinho IA</h3>
                     <AvaliacaoEstrelas notas={notasDoJovinho} />
-                </div>
-
-                <div className="flex flex-col items-center mt-s20">
-                    <img src={LogoGembyte} alt="Logo GemByte" className="w-30 mb-s10" />
-                    <p className="text-white text-[2.5vmin] font-semibold">GemByte</p>
                 </div>
                 </div>
 
             </div>
 
-            {/* Copyright */}
             <div className="mt-s50 pt-s30 border-t border-white/20 text-center">
                 <p className="text-white/70 text-[1.8vmin]">© 2026 GemByte. Todos os direitos reservados.</p>
             </div>

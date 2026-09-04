@@ -18,7 +18,7 @@ function LembreteFotos () {
 
                 <div className="flex justify-center gap-s30 w-full pb-16">
                     <img src={HomemClique} loading='lazy'  alt="celular-clique" className="mt-s40 mb-s70 w-[18%] transition duration-500 hover:scale-105 max-[1024px]:mb-0 max-[1024px]:w-[30%] max-[680px]:w-[30%]"/>
-                    <img src={CelularClique} loading='lazy'  alt="celular-clique" className="mt-s40 mb-s70 w-[18%] transition duration-500 hover:scale-105 max-[1024px]:mb-0 max-[1024px]:w-[30%] max-[680px]:w-[30%]"/>
+                    <img src={CelularClique} loading='lazy'  alt="celular-clique" className="mt-s40 mb-s70 w-[18%] max-[1024px]:mb-0 max-[1024px]:w-[30%] max-[680px]:w-[30%]"/>
                     <img src={MulherClique} loading='lazy'  alt="celular-clique" className="mt-s40 mb-s70 w-[18%] transition duration-500 hover:scale-105 max-[1024px]:mb-0 max-[1024px]:w-[30%] max-[680px]:w-[30%]"/>
                 </div>
             </div>
