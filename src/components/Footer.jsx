@@ -23,16 +23,16 @@ function Footer () {
                 </ul>
                 </div>
 
-                <div className=' w-[10%]'>
+                <div className=' w-[10%] max-mobile:w-full'>
                     <h3 className="text-white text-[3vmin] font-semibold mb-s20">Siga-nos</h3>
                     <div className="flex w-full gap-s10 justify-start max-[1024px]:justify-center">
-                        <a href="https://www.instagram.com/jovi.brasil" target='_blank' className=' w-[50%] max-mobile:w-full'>
+                        <a href="https://www.instagram.com/jovi.brasil" target='_blank' className=' w-[50%] max-mobile:w-[10%]'>
                             <span><img src={LogoInstagram} className="w-full" alt="LogoInstagram" loading='lazy' /></span>
                         </a>
-                        <a href="https://www.youtube.com/@Jovi.Brasil" target='_blank' className=' w-[50%]  max-mobile:w-full'>
+                        <a href="https://www.youtube.com/@Jovi.Brasil" target='_blank' className=' w-[50%]  max-mobile:w-[10%]'>
                             <span><img src={LogoYoutube} className="w-full" alt="LogoYoutube" loading='lazy' /></span>
                         </a>
-                        <a href="https://www.linkedin.com/company/jovi-mobile/" target='_blank'className=' w-[50%]  max-mobile:w-full'>
+                        <a href="https://www.linkedin.com/company/jovi-mobile/" target='_blank'className=' w-[50%]  max-mobile:w-[10%]'>
                             <span><img src={LogoLinkedin} className="w-full" alt="LogoLinkedin" loading='lazy' /></span>
                         </a>
                     </div>
