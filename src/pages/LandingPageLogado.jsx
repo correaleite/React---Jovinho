@@ -1,0 +1,28 @@
+import '../styles.css'
+import Hero from '../components/hero.jsx'
+import Solucao from '../components/Solucao.jsx'
+import PublicoAlvo from '../components/PublicoAlvo.jsx'
+import Galeria from '../components/Galeria.jsx'
+import NossaEquipe from '../components/NossaEquipe.jsx'
+import Contatos from '../components/Contatos.jsx'
+import LoginSection from '../components/Login.jsx'
+import Footer from '../components/Footer.jsx'
+
+function LandingPage() {
+  return (
+    <>
+    <Hero />
+    <Solucao />
+    <PublicoAlvo />
+    <Galeria />
+    <NossaEquipe />
+    <LoginSection />
+    <Contatos />
+    <Footer />
+    </>
+    
+  );
+}
+
+export default LandingPage;
+

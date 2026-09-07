@@ -4,7 +4,7 @@ import AvaliacaoEstrelas from './AvaliacaoEstrelas';
 function Contatos () {
     const notasDoJovinho = [5, 4, 5, 3, 4, 5, 4, 5, 4, 5, 5, 5, 3, 5, 5, 4, 5];
     return (
-        <section className="min-h-[90vh] px-s80 flex flex-col items-center justify-between bg-white-obscure" id="contato">
+        <section className="min-h-screen px-s80 flex flex-col items-center justify-between bg-white-obscure" id="contato">
             <h1 className="text-[9vmin] pt-s60 font-bold">Contatos</h1>
             <div className="flex flex-col justify-center items-center">
                 <ul className="flex flex-col gap-s20">
