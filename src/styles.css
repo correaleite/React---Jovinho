@@ -19,17 +19,19 @@
     --spacing-s80: 80px;
     --spacing-s90: 90px;
     --spacing-s100: 100px;
-    --font-size-h1-12v: 12vmin;
-    --font-size-h1-9v: 9vmin;
-    --font-size-h1-7v: 7vmin;
-    --font-size-h2-6v: 6vmin;
-    --font-size-h3-4-2v: 4.2vmin;
-    --font-size-h3-3v: 3vmin;
-    --font-size-p-4v: 4vmin;
-    --font-size-p-3v: 3vmin;
-    --font-size-plink-3v: 3vmin;
+    --text-12v: 12vmin;
+    --text-9v: 9vmin;
+    --text-7v: 7vmin;
+    --text-6v: 6vmin;
+    --text-4p5v: 4.5vmin;
+    --text-4p2v: 4.2vmin;
+    --text-4v: 4vmin;
+    --text-3v: 3vmin;
+    --text-2p5v: 2.5vmin;
+    --text-2p2v: 2.2vmin;
+    --text-2v: 2vmin;
+    --text-1p8v: 1.8vmin;
     --breakpoint-mobile: 680px;
-
 }
 
  @layer base {
@@ -50,23 +52,23 @@ ol, ul {
 }
 
 h1 {
-    font-size: var(--font-size-h1-7v);
+    font-size: var(--text-7v);
 }
 
 h2 {
     color: var(--color-dark-blue);
-    font-size: var(--font-size-h2-6v);
+    font-size: var(--text-6v);
 
 }
 
 h3 {
     color: var(--color-dark-blue);
-    font-size: var(--font-size-h3-4-2v);
+    font-size: var(--text-4p2v);
 }
 
 p {
     color: var(--color-dark-blue);
-    font-size: var(--font-size-p-4v);
+    font-size: var(--text-4v);
 }
 
 a {

@@ -62,7 +62,7 @@ function LoginSection() {
   return (
     <section className="min-h-screen px-s80 flex flex-col justify-center items-center max-[1024px]:px-s40 max-[680px]:px-s20" id="login">
       <div className="flex justify-center items-center w-full">
-        <div className="flex flex-col items-center border-[3px] border-strong-dark bg-white-obscure pt-s40 gap-6.25 h-137.5 w-[40%] rounded-[10px] max-[1024px]:w-[65%] max-[680px]:w-[90%] max-[680px]:h-auto max-[680px]:pb-s40">
+        <div className="flex flex-col items-center border-3 border-strong-dark bg-white-obscure pt-s40 gap-6.25 h-137.5 w-2/5 rounded-2xl max-[1024px]:w-[65%] max-[680px]:w-9/10 max-[680px]:h-auto max-[680px]:pb-s40">
           {logado ? (
             <>
               <h2>Bem-vindo!</h2>

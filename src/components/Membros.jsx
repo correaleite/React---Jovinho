@@ -9,7 +9,7 @@ function Membros () {
         <div className="min-h-screen bg-white-obscure">
             <div className="text-center pb-s100">
                 <div>
-                    <h1 className="text-[9vmin] text-lighter-dark pt-s60 pb-s40 font-bold">Equipe</h1>
+                    <h1 className="text-9v text-lighter-dark pt-s60 pb-s40 font-bold">Equipe</h1>
                     <h3 className="text-gray font-semibold mb-s50">Conheça os membros da GemByte</h3>
                 </div>
                 <div className="grid grid-cols-3 gap-s30 max-[1024px]:grid-cols-1 max-[1024px]:gap-s50">
