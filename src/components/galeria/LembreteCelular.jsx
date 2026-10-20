@@ -1,4 +1,4 @@
-import LembreteCelularImg from '../assets/home/LembreteCelular.svg'
+import LembreteCelularImg from '/src/assets/home/LembreteCelular.svg'
 
 function LembreteCelular () {
     return (

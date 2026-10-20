@@ -1,4 +1,4 @@
-import CelularAgua from '../assets/home/celular-agua-fotos.png'
+import CelularAgua from '/src/assets/home/celular-agua-fotos.png'
 
 function HeroGaleria () {
     return (

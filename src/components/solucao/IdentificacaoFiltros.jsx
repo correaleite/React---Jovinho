@@ -1,10 +1,10 @@
-import MeninaMelhorFoto from '../assets/home/menina-melhor-foto.svg';
+import MeninaMelhorFoto from '/src/assets/home/menina-melhor-foto.svg';
 
 function IdentificacaoFiltros () {
     return (
         <div className="min-h-screen bg-white-obscure px-s100 max-[1024px]:px-s60" id="identificacao-filtros">
             <div className="flex flex-col items-center text-center pt-s100">
-                <h3 className="text-gray mb-s20 font-bold">Identificação e Filtro Inteligentes</h3>
+                <h3 className="text-gray mb-s20 font-bold ">Identificação e Filtro Inteligentes</h3>
                 <h1 className="font-bold text-9v text-lighter-dark mb-s30">Faça as melhores fotos</h1>
                 <div className="flex flex-col items-center justify-center">
                     <p className="text-2p5v font-medium text-gray max-[1024px]:text-3v max-[680px]:text-4v">Receba sugestões de como melhorar sua foto e tenha erros corrijos pelo<br />próprio guia inteligente integrado na câmera</p>

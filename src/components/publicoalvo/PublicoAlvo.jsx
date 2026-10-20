@@ -1,4 +1,4 @@
-import PublicoAlvoImg from '../assets/home/publico-alvo.jpg'
+import PublicoAlvoImg from '/src/assets/home/publico-alvo.jpg'
 
 function PublicoAlvo () {
     return (

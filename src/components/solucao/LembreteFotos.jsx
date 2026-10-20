@@ -1,6 +1,6 @@
-import HomemClique from '../assets/home/homem-clique.svg';
-import CelularClique from '../assets/home/celular-clique.svg';
-import MulherClique from '../assets/home/mulher-clique.svg';
+import HomemClique from '/src/assets/home/homem-clique.svg';
+import CelularClique from '/src/assets/home/celular-clique.svg';
+import MulherClique from '/src/assets/home/mulher-clique.svg';
 
 function LembreteFotos () {
     return (

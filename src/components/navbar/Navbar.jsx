@@ -1,14 +1,26 @@
-import { useState } from "react";
-import circleUserRegularFull from '../assets/home/circle-user-regular-full.svg'
-
-
+import { useState, useEffect } from "react";
+import circleUserRegularFull from '/src/assets/home/circle-user-regular-full.svg'
 
 function Navbar () {
 
     const [menuAberto, setMenuAberto] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const scrollThreshold = 100;
+
+        const handleScroll = () => {
+            setScrolled(window.scrollY > scrollThreshold);
+        };
+
+        handleScroll();
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between min-h-s90 bg-white px-s80 max-mobile:px-s40">
+        <header className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between min-h-s90 px-s80 transition-all duration-450 max-mobile:px-s40 ${scrolled ? "bg-white" : "bg-transparent"}`}>
             <a href="#"><h1 className="font-bold text-4p5v max-mobile:text-7v">JOVI</h1></a>
             <nav className="max-mobile:hidden">
                 <ul className="flex gap-s40 max-lg:gap-s20 mr-s30">
@@ -30,9 +42,7 @@ function Navbar () {
             </button>
 
             <div className={`
-                fixed top-[80px] left-0 right-0 bg-white flex flex-col items-center gap-s30 py-s40
-                transition-all duration-300 origin-top
-                max-mobile:flex
+                fixed top-[80px] left-0 right-0 bg-white flex flex-col items-center gap-s30 py-s40 transition-all duration-300 origin-top max-mobile:flex
                 ${menuAberto ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"}
             `}>
                 <a href="#solucao" onClick={() => setMenuAberto(false)} className="text-4v hover:text-blue">Solução</a>
@@ -46,7 +56,9 @@ function Navbar () {
                 </a>
             </div>
         </header>
-    )
+        
+    );
+   
 }
 
 export default Navbar

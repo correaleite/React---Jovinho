@@ -1,7 +1,7 @@
-import AvaliacaoEstrelas from './AvaliacaoEstrelas';
-import LogoInstagram from '../assets/home/instagram-brands-solid.png'
-import LogoYoutube from '../assets/home/youtube-brands-solid.png'
-import LogoLinkedin from '../assets/home/linkedin-brands-solid.png'
+import AvaliacaoEstrelas from '../contatos/AvaliacaoEstrelas';
+import LogoInstagram from '/src/assets/home/instagram-brands-solid.png'
+import LogoYoutube from '/src/assets/home/youtube-brands-solid.png'
+import LogoLinkedin from '/src/assets/home/linkedin-brands-solid.png'
 
 
 function Footer () {

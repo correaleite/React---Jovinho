@@ -5,7 +5,7 @@ import LembreteFotos from "./LembreteFotos"
 
 function Solucao () {
     return (
-        <section class="section-solucao" id="solucao">
+        <section className="bg-white-obscure" id="solucao">
             <JovinhoIA />
             <CardsEfeitos />
             <IdentificacaoFiltros />

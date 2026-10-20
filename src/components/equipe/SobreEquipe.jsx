@@ -1,5 +1,5 @@
-import LogoGembyte from '../assets/home/logo-gembyte.svg';
-import TimeFoto from '../assets/home/membros.svg';
+import LogoGembyte from '/src/assets/home/logo-gembyte.svg';
+import TimeFoto from '/src/assets/home/membros.svg';
 
 
 function SobreEquipe () {
@@ -17,7 +17,7 @@ function SobreEquipe () {
                 <div className="flex justify-center items-center mt-s50 mb-s70">
                     <p className="w-3/5 text-gray text-3v font-medium max-[1024px]:text-4v">Somos uma empresa de três membros, criada em 2026. Buscamos uma nota 10 da Jovi.</p>
                 </div>
-                <img src={TimeFoto} alt="Time-foto" className="mx-auto w-4/5 mb-s60 rounded-xs" />
+                <img src={TimeFoto} alt="Time-foto" className="mx-auto w-4/5 mb-s60 rounded-3xl" />
             </div>
         </>
     )

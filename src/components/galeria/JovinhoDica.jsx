@@ -1,4 +1,4 @@
-import JovinhoDicaImg from '../assets/home/JovinhoDicaCelular.svg'
+import JovinhoDicaImg from '/src/assets/home/JovinhoDicaCelular.svg'
 
 function JovinhoDica () {
     return (

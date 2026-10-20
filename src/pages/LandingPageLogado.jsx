@@ -1,12 +1,12 @@
 import '../styles.css'
-import Hero from '../components/hero.jsx'
-import Solucao from '../components/Solucao.jsx'
-import PublicoAlvo from '../components/PublicoAlvo.jsx'
-import Galeria from '../components/Galeria.jsx'
-import NossaEquipe from '../components/NossaEquipe.jsx'
-import Contatos from '../components/Contatos.jsx'
-import LoginSection from '../components/Login.jsx'
-import Footer from '../components/Footer.jsx'
+import Hero from '../components/hero/hero.jsx'
+import Solucao from '../components/solucao/Solucao.jsx'
+import PublicoAlvo from '../components/publicoalvo/PublicoAlvo.jsx'
+import Galeria from '../components/galeria/Galeria.jsx'
+import NossaEquipe from '../components/equipe/NossaEquipe.jsx'
+import Contatos from '../components/contatos/Contatos.jsx'
+import LoginSection from '../components/login/Login.jsx'
+import Footer from '../components/footer/Footer.jsx'
 
 function LandingPage() {
   return (
@@ -16,8 +16,8 @@ function LandingPage() {
     <PublicoAlvo />
     <Galeria />
     <NossaEquipe />
-    <LoginSection />
     <Contatos />
+    <LoginSection />
     <Footer />
     </>
     

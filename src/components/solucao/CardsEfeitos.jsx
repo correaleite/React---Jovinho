@@ -1,6 +1,6 @@
-import CardSugestao from '../assets/home/celular-card-sugestao.svg';
-import CardGuia from '../assets/home/celular-card-guia.svg';
-import CardLembrete from '../assets/home/celular-card-lembrete.svg';
+import CardSugestao from '/src/assets/home/celular-card-sugestao.svg';
+import CardGuia from '/src/assets/home/celular-card-guia.svg';
+import CardLembrete from '/src/assets/home/celular-card-lembrete.svg';
 import CardEfeito from './CardEfeito';
 
 

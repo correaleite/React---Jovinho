@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 
 function LoginSection() {
   const [email, setEmail] = useState('');
@@ -60,19 +60,19 @@ function LoginSection() {
   }
 
   return (
-    <section className="min-h-screen px-s80 flex flex-col justify-center items-center max-[1024px]:px-s40 max-[680px]:px-s20" id="login">
+    <section className="min-h-screen px-s80 flex flex-col justify-center bg-white-obscure items-center max-[1024px]:px-s40 max-[680px]:px-s20" id="login">
       <div className="flex justify-center items-center w-full">
-        <div className="flex flex-col items-center border-3 border-strong-dark bg-white-obscure pt-s40 gap-6.25 h-137.5 w-2/5 rounded-2xl max-[1024px]:w-[65%] max-[680px]:w-9/10 max-[680px]:h-auto max-[680px]:pb-s40">
+        <div className="flex flex-col items-center bg-white pt-s40 gap-6.25 h-150 w-4/5 rounded-4xl max-[1024px]:w-[65%] max-[680px]:w-9/10 max-[680px]:h-auto max-[680px]:pb-s40">
           {logado ? (
             <>
               <h2>Bem-vindo!</h2>
-              <p className="text-[2vmin]">Você está logado como <strong>{emailLogado}</strong></p>
+              <p className="text-2v">Você está logado como <strong>{emailLogado}</strong></p>
               <button onClick={sair} className="h-s30 w-1/5 border border-lighter-dark rounded-[3px] bg-white transition duration-400 hover:bg-blue hover:text-white max-[680px]:w-1/2">Sair</button>
             </>
           ) : (
             <>
               <h2 className='font-bold'>Login</h2>
-              <div className="w-full px-s40 max-[680px]:px-s20">
+              <div className="w-full px-s40 max-[680px]:px-s30">
                 <div className="mt-s10">
                   <label htmlFor="IDemail">Email:</label>
                   <input
@@ -82,7 +82,7 @@ function LoginSection() {
                     placeholder=" Endereço de e-mail"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="h-s30 w-full pl-s10 border border-lighter-dark rounded-[3px] bg-white"
+                    className="h-s30 w-full px-s10 py-s20 rounded-3xl bg-white-obscure"
                   />
                 </div>
                 <div className="mt-s10">
@@ -94,16 +94,13 @@ function LoginSection() {
                     placeholder=" Mínimo de 5 caracteres"
                     value={senha}
                     onChange={(e) => setSenha(e.target.value)}
-                    className="h-s30 w-full pl-s10 border border-lighter-dark rounded-[3px] bg-white"
+                    className="h-s30 w-full px-s10 py-s20 rounded-3xl bg-white-obscure"
                   />
                   {senha.length > 0 && (
-                    <div className="mt-s10">
+                    <div className=" positon: absolute">
                       <div
                         style={{
-                          width: `${pontosSenha * 10}%`,
                           height: '4px',
-                          background: corForca,
-                          transition: 'width 0.2s, background 0.2s'
                         }}
                       />
                       <span style={{ color: corForca, fontSize: '0.85em' }}>
@@ -113,12 +110,14 @@ function LoginSection() {
                   )}
                 </div>
               </div>
-              <button id="btnLogar" onClick={logar} className="h-s30 w-1/5 border border-lighter-dark rounded-[3px] bg-white transition duration-400 hover:bg-blue hover:text-white max-[680px]:w-1/2">Entrar</button>
-              <div className="flex flex-col justify-center items-center w-full gap-s10">
-                <p className="text-[2vmin]">Problemas de login?</p>
-                <button id="btnReportar" onClick={reportar} className="h-s30 w-1/5 border border-lighter-dark rounded-[3px] bg-white transition duration-400 hover:bg-blue hover:text-white max-[680px]:w-1/2">Reporte aqui</button>
+              <div className='grid grid-cols-2 gap-s90 mt-s30 mb-s40 px-s20 max-md:grid-cols-1 max-md:gap-s30'>
+                <button id="btnLogar" onClick={logar} className="px-s30 py-s10 w-full rounded-3xl bg-white-obscure transition duration-400 cursor-pointer hover:text-blue">Entrar</button>
+                <button id="btnReportar" onClick={reportar} className="px-s30 py-s10 w-full rounded-3xl bg-white-obscure transition duration-400 cursor-pointer hover:text-blue">Reporte problemas de login</button>
               </div>
-              <p className="text-[2vmin] text-center px-s20">Email: "jovinho@fiap.com.br"<br />Senha: Qualquer</p>
+              <div className='flex justify-between gap-s30 w-2/5 mb-s30 max-md:flex-col max-md:w-full max-md:items-center'>
+                <p className="text-2v max-md:text-2p5v max-sm:text-3v">Email: "jovinho@fiap.com.br"</p>
+                <p className="text-2v max-md:text-2p5v max-sm:text-3v">Senha: Qualquer</p>
+              </div>
             </>
           )}
         </div>
