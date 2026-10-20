@@ -3,7 +3,7 @@ import Membros from "./Membros"
 
 function NossaEquipe () {
     return (
-         <section class="section-nossa-equipe" id="nossa-equipe">
+         <section id="nossa-equipe">
              <SobreEquipe />
              <Membros />
          </section>

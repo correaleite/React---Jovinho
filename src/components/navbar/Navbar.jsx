@@ -31,7 +31,7 @@ function Navbar () {
                 <li><a href="#contato" className="text-2v transition duration-500 hover:text-blue">Contato</a></li>
                 </ul>
             </nav>
-            <a className="transition duration-500 hover:scale-110 max-mobile:hidden" href="#login">
+            <a className="transition duration-200 hover:scale-106 max-mobile:hidden" href="#login">
                 <img className="w-s30" src={circleUserRegularFull} alt="circle-user" />
             </a>
 

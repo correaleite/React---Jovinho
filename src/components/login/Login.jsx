@@ -65,9 +65,11 @@ function LoginSection() {
         <div className="flex flex-col items-center bg-white pt-s40 gap-6.25 h-150 w-4/5 rounded-4xl max-[1024px]:w-[65%] max-[680px]:w-9/10 max-[680px]:h-auto max-[680px]:pb-s40">
           {logado ? (
             <>
+            <div className='flex flex-col m-auto gap-s20 text-center'>
               <h2>Bem-vindo!</h2>
               <p className="text-2v">Você está logado como <strong>{emailLogado}</strong></p>
-              <button onClick={sair} className="h-s30 w-1/5 border border-lighter-dark rounded-[3px] bg-white transition duration-400 hover:bg-blue hover:text-white max-[680px]:w-1/2">Sair</button>
+              <button onClick={sair} className="px-s30 py-s10 w-full rounded-3xl bg-white-obscure transition duration-400 cursor-pointer hover:text-blue">Sair</button>
+            </div>
             </>
           ) : (
             <>
@@ -116,7 +118,7 @@ function LoginSection() {
               </div>
               <div className='flex justify-between gap-s30 w-2/5 mb-s30 max-md:flex-col max-md:w-full max-md:items-center'>
                 <p className="text-2v max-md:text-2p5v max-sm:text-3v">Email: "jovinho@fiap.com.br"</p>
-                <p className="text-2v max-md:text-2p5v max-sm:text-3v">Senha: Qualquer</p>
+                <p className="text-2v max-lg:mb-s20 max-md:text-2p5v max-sm:text-3v">Senha: Qualquer</p>
               </div>
             </>
           )}
