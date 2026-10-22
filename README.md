@@ -3,9 +3,9 @@
 - React JS
 - JavaScript (ES6+)
 - Vite
-- HTML5 / JSX
-- CSS3
-- Node.js / npm
+- HTML5 e JSX
+- Tailwind CSS
+- Node.js e npm
 
 ## Pré-requisitos
 
@@ -23,7 +23,7 @@ npm -v
 
 1. Acesse a pasta do projeto
 ```bash ou terminal
-   cd react-jovinho
+   cd React---Jovinho
 ```
 
 2. Instale as dependências
@@ -46,7 +46,7 @@ Basta abrir esse link no navegador.
 Se você deseja abrir de outro jeito para o navegador faça assim:
 
 ```bash ou terminal
-o + enter
+o (primeiro) + Enter (segundo)
 ```
 Para abrir no browser
 
@@ -63,6 +63,8 @@ Durante o desenvolvimento deste projeto, foi utilizada IA (Claude, da Anthropic)
 - Conversão de lógica de login originalmente escrita em JavaScript puro (manipulação de DOM) para o padrão de componentes React, utilizando hooks como `useState` e `useEffect`.
 - Implementação de funcionalidades com o objeto `Math`, como cálculo de força de senha e geração de senha aleatória.
 - Estruturação de um componente de avaliação por estrelas.
+- Aplicação da API de mapas da Leaflet
+- integração do CSS padrão para Tailwind CSS
 - Auxílio na escrita e organização deste README.
 
 A lógica de negócio, validações e decisões de estrutura do projeto foram definidas e revisadas pelo desenvolvedor, com a IA atuando como suporte técnico e educacional durante o processo.
