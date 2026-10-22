@@ -25,7 +25,7 @@ export default function MapaEmpresa() {
         center={[centro.lat, centro.lng]}
         zoom={15}
         scrollWheelZoom={false}
-        className="w-4/5 mt-s10 mb-s50 h-80 rounded-2xl overflow-hidden"
+        className="w-4/5 mt-s10 mb-s50 h-80 rounded-2xl overflow-hidden z-0"
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
